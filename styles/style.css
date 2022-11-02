@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --primaryColor: white;
+  --secondaryColor: blue;
+  --alternativeColor: white;
+  --gray: black;
+  --mainBoxShadow: .5vw .5vw .5vw var(--alternativeColor);
+  --landingPage : .5vw 1vw .5vw var(--gray);
+  --activeLink: aqua;
+}
+
+a:link {
+  background-color: var(--gray);
+  color: var(--primaryColor);
+}
+a:visited {
+  color: var(--alternativeColor);
+  border-radius: 5px;
+}
+a:hover {
+  font-size: 20px;
+  color: var(--secondaryColor);
+}
+a:active {
+  color: var(--primaryColor);
+  background-color: var(--activeLink);
+}
+
+header, main, footer {
+  min-width: 100%;
+}
+
+header {
+  background-color: black;
+}
+
+header, .menu-list {
+  display: inline-flex;
+}
+
+header img {
+  width: 5em;
+}
+
+.menu {
+  margin-left: auto;
+  align-self: center;
+}
+.menu-list li {
+margin-right: 90px;
+
+}
+
+.menu-list li a {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.menu-list {
+  list-style: none;
+  font-size: 20px;
+}
+
+.logo-1 {
+  width: 100%;
+}
+
+.wallpaper {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+#slogan {
+  position: absolute;
+  bottom: 220px;
+  left: 16px;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+}
+
+body {
+  background-color: black;
+}
+
+h2, p {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#about {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+#gallery {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+#contact {
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 20px;
+}
+
+#slogan {
+    position: static;
+}
+
+@media (width <= 600px){
+    .container {
+        flex-flow: column wrap;
+    }
+    
+    .container img {
+        width: 100%;
+    }
+}
